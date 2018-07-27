@@ -1,0 +1,147 @@
+//Variables
+$universal_font: "Calibri", sans-serif;
+
+
+body {
+    background-color:gray;
+    font-family:$universal_font;
+
+    p {      
+        font-size:30px;
+        text-align:center;
+        color:white;
+    }
+
+    h1 {
+        font-size:40px;  
+        text-align:center;
+        color:white;   
+      } 
+    
+    h2 {
+        color:white;
+        text-decoration: underline;
+        font-weight: 700;
+        text-align:center;
+    }
+
+    h3{
+        color:white;
+        text-align:center;
+        margin: {
+            left:15%;
+            right:15%;
+        }
+    }
+      
+    button {
+         text-align:center;
+         height:60px;
+         width:15%;
+         background-color: green;
+         border: {
+             style:solid;
+             color:green;
+         }
+         font-size:30px;
+         color:white;
+    }
+
+    label{
+        color:white;
+        font: {
+            size:40px;
+        }
+    }
+    
+    input{
+        height:40px ;
+        font: 35px Arial !important;
+        width:20%;
+    }
+
+    table{
+        border: {
+            style:solid;
+            color:white;
+        }
+        margin:auto;
+    }
+}
+
+.center{
+    text-align:center;
+}
+
+.startButton{
+    text-align:center;
+    height:50px !important;
+    background-color: green;
+    border: {
+        style:solid;
+        color:green;
+    }
+    font-size:30px;
+    color:white;
+}
+
+.hintButton {
+    color:black;
+    background-color:yellow;
+    border-color:yellow;
+    height:50px;
+    width:17%;
+}
+
+ .quitButton {
+    background-color:blue;
+    border-color:blue;
+    height:50px;
+     width:17%;
+}
+    
+.submitButton {
+    width:7%;
+    height:58px;
+    background-color: green;
+    border-color:green;
+    color:white;
+}
+
+.platform{
+    margin:0px auto 0px auto;
+    @media screen and (min-width:1281px){
+        width:70%;
+    }
+    @media screen and (max-width:1280px){
+        width:96%;
+    }
+}
+
+.divMargin{
+    margin:0px auto 0px auto;
+    width:50%;
+}
+
+.statusDesign{
+    color:white;
+    text-align:center;
+    font: {
+         size:24px !important;
+    }
+}
+
+.answerBoxSize {
+    width:5%;
+}
+
+.fish{
+    @media screen and (min-width:1281px){
+        margin-left:10%
+    }
+    @media screen and (max-width:1280px){
+        margin-left:-5%;
+    }
+}
+
+
