@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> HANGMAN GAME </title>
+    <link rel="stylesheet" href="design.css"/>
+</head>
+
+<body>
+    <?php 
+        $randomInteger = intval(rand(0,4));    
+        $gameWords = array("Pizza", "Developer", "HTML", "Computer", "Coding");
+        $generatedWord = $gameWords[$randomInteger];
+    ?>
+    
+    <h1> Welcome to the Hangman Game!</h1>
+
+    <br>
+
+    <div id="flashWave" style="text-align:center;">
+        <object width="300" height="300" data="Hangman_Wave.swf"></object>
+    </div>
+
+    <p>To begin the game, click the Start Button and it will take you into the game!</p>
+
+    <form action="main.php" method="POST">
+        <div id="startDiv" style="text-align:center;">
+            <input class="startButton" type="submit" value="Start!"/>
+            <input type="hidden" name="hiddenWord" value="<?php echo $generatedWord ?>"/>
+            <input type="hidden" name="hiddenNum" value="<?php echo $randomInteger ?>"/>
+        </div>
+    </form>
+</body>
+
+</html>
